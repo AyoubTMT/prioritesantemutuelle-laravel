@@ -1,24 +1,44 @@
 {
     "hospitalisation": {
       "H1": {
-        "frais_journaliers": "Frais réels",
-        "honoraires": "100%",
-        "chambre_particuliere": "50 €/jour"
+        "description": "Dans un établissement relevant de la loi hospitalière, public ou privé, conventionné ou non conventionné, y compris pour l’hospitalisation « de jour », dite ambulatoire.",
+        "Frais_journaliers_hospitalier": "Frais réels",
+        "Participation_forfaitaire": "Frais réels",
+        "Honoraires médicaux, chirurgicaux, obstétricaux (médecin n'ayant pas adhéré à un dispositif de pratique tarifaire maitrisée)": "100 %",
+        "Honoraires médicaux, chirurgicaux, obstétricaux (médecin ayant adhéré à un dispositif de pratique tarifaire maitrisée)": "100 %",
+        "Frais de séjour, salle d’opération": "100 %",
+        "Chambre particulière - sauf affections psychiatriques": "50€/jour",
+        "Frais d’accompagnant (hors restauration)": ""
       },
       "H2": {
-        "frais_journaliers": "Frais réels",
-        "honoraires": "150%",
-        "chambre_particuliere": "65 €/jour"
+        "description": "Dans un établissement relevant de la loi hospitalière, public ou privé, conventionné ou non conventionné, y compris pour l’hospitalisation « de jour », dite ambulatoire.",
+        "Frais_journaliers_hospitalier": "Frais réels",
+        "Participation_forfaitaire": "Frais réels",
+        "honoraires_adhere": "150 %",
+        "honoraires_non_adhere": "170 %",
+        "frais_sejour": "125 %",
+        "chambre_particuliere": "65€/jour",
+        "frais_accompagnant": "25€/jour"
       },
       "H3": {
-        "frais_journaliers": "Frais réels",
-        "honoraires": "200%",
-        "chambre_particuliere": "Frais réels"
+        "description": "Dans un établissement relevant de la loi hospitalière, public ou privé, conventionné ou non conventionné, y compris pour l’hospitalisation « de jour », dite ambulatoire.",
+        "Frais_journaliers_hospitalier": "Frais réels",
+        "Participation_forfaitaire": "Frais réels",
+        "honoraires_adhere": "200 %",
+        "honoraires_non_adhere": "220 %",
+        "frais_sejour": "Frais réels",
+        "chambre_particuliere": "Frais réels",
+        "frais_accompagnant": "Frais réels"
       },
       "H4": {
-        "frais_journaliers": "Frais réels",
-        "honoraires": "500%",
-        "chambre_particuliere": "Frais réels"
+        "description": "Dans un établissement relevant de la loi hospitalière, public ou privé, conventionné ou non conventionné, y compris pour l’hospitalisation « de jour », dite ambulatoire.",
+        "Frais_journaliers_hospitalier": "Frais réels",
+        "Participation_forfaitaire": "Frais réels",
+        "honoraires_adhere": "200 %",
+        "honoraires_non_adhere": "500 %",
+        "frais_sejour": "Frais réels",
+        "chambre_particuliere": "Frais réels",
+        "frais_accompagnant": "Frais réels"
       }
     },
     "soins_courants": {

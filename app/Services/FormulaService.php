@@ -110,20 +110,38 @@ class FormulaService
                 "details" => []
             ];
         }
-
-        // Fetch details from JSON data for all categories
-        $details = [
-            "soins" => $this->formules["soins_courants"][$formulaName[1]],
-            "hospitalisation" => $this->formules["hospitalisation"][$formulaName[1]],
-            "optique" => $this->formules["optique"][$formulaName[1]],
-            "aides_auditives" => $this->formules["aides_auditives"][$formulaName[1]],
-            "dentaire" => $this->formules["dentaire"][$formulaName[1]],
-            "medecines_douces" => $this->formules["prevention_et_medecines_douces"][$formulaName[1]]
+    
+        // Map formulas to their corresponding levels in JSON
+        $levels = [
+            "ECO" => ["soins" => "S1", "hospitalisation" => "H1", "optique" => "O1", "aides_auditives" => "A1", "dentaire" => "D1", "medecines_douces" => "G1"],
+            "CONFORT" => ["soins" => "S2", "hospitalisation" => "H2", "optique" => "O2", "aides_auditives" => "A2", "dentaire" => "D2", "medecines_douces" => "G2"],
+            "PRESTIGE" => ["soins" => "S3", "hospitalisation" => "H3", "optique" => "O3", "aides_auditives" => "A3", "dentaire" => "D3", "medecines_douces" => "G3"],
+            "PREMIUM" => ["soins" => "S4", "hospitalisation" => "H4", "optique" => "O4", "aides_auditives" => "A4", "dentaire" => "D4", "medecines_douces" => "G4"]
         ];
-
+    
+        if (!isset($levels[$formulaName])) {
+            return [
+                "formula" => "Invalid formula name",
+                "details" => []
+            ];
+        }
+    
+        $formulaLevels = $levels[$formulaName];
+    
+        // Fetch details for each level from the JSON data
+        $details = [
+            "soins" => $this->formules["soins_courants"][$formulaLevels["soins"]],
+            "hospitalisation" => $this->formules["hospitalisation"][$formulaLevels["hospitalisation"]],
+            "optique" => $this->formules["optique"][$formulaLevels["optique"]],
+            "aides_auditives" => $this->formules["aides_auditives"][$formulaLevels["aides_auditives"]],
+            "dentaire" => $this->formules["dentaire"][$formulaLevels["dentaire"]],
+            "medecines_douces" => $this->formules["prevention_et_medecines_douces"][$formulaLevels["medecines_douces"]]
+        ];
+    
         return [
             "formula" => $formulaName,
             "details" => $details
         ];
     }
+    
 }
