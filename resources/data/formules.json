@@ -1,0 +1,127 @@
+{
+    "hospitalisation": {
+      "H1": {
+        "frais_journaliers": "Frais réels",
+        "honoraires": "100%",
+        "chambre_particuliere": "50 €/jour"
+      },
+      "H2": {
+        "frais_journaliers": "Frais réels",
+        "honoraires": "150%",
+        "chambre_particuliere": "65 €/jour"
+      },
+      "H3": {
+        "frais_journaliers": "Frais réels",
+        "honoraires": "200%",
+        "chambre_particuliere": "Frais réels"
+      },
+      "H4": {
+        "frais_journaliers": "Frais réels",
+        "honoraires": "500%",
+        "chambre_particuliere": "Frais réels"
+      }
+    },
+    "soins_courants": {
+      "S1": {
+        "paramedicaux": "100%",
+        "consultations": "100%",
+        "analyses": "100%"
+      },
+      "S2": {
+        "paramedicaux": "125%",
+        "consultations": "125%",
+        "analyses": "125%"
+      },
+      "S3": {
+        "paramedicaux": "180%",
+        "consultations": "140%",
+        "analyses": "180%"
+      },
+      "S4": {
+        "paramedicaux": "200%",
+        "consultations": "200%",
+        "analyses": "200%"
+      }
+    },
+    "dentaire": {
+      "D1": {
+        "soins": "125%",
+        "protheses": "125%",
+        "orthodontie": "125%"
+      },
+      "D2": {
+        "soins": "150%",
+        "protheses": "150%",
+        "orthodontie": "150%"
+      },
+      "D3": {
+        "soins": "300%",
+        "protheses": "300%",
+        "orthodontie": "300%"
+      },
+      "D4": {
+        "soins": "400%",
+        "protheses": "400%",
+        "orthodontie": "400%"
+      }
+    },
+    "optique": {
+      "O1": {
+        "equipements_classe_A": "Frais réels",
+        "monture_2_verres_simples": "100 €"
+      },
+      "O2": {
+        "equipements_classe_A": "Frais réels",
+        "monture_2_verres_simples": "200 €"
+      },
+      "O3": {
+        "equipements_classe_A": "Frais réels",
+        "monture_2_verres_simples": "300 €"
+      },
+      "O4": {
+        "equipements_classe_A": "Frais réels",
+        "monture_2_verres_simples": "420 €"
+      }
+    },
+    "aides_auditives": {
+      "A1": {
+        "equipements_classe_I": "Frais réels",
+        "equipements_classe_II": "100%"
+      },
+      "A2": {
+        "equipements_classe_I": "Frais réels",
+        "equipements_classe_II": "200%"
+      },
+      "A3": {
+        "equipements_classe_I": "Frais réels",
+        "equipements_classe_II": "300%"
+      },
+      "A4": {
+        "equipements_classe_I": "Frais réels",
+        "equipements_classe_II": "500%"
+      }
+    },
+    "prevention_et_medecines_douces": {
+      "G1": {
+        "osteopathie": "100%",
+        "chiropractie": "100%",
+        "acupuncture": "100%"
+      },
+      "G2": {
+        "osteopathie": "125%",
+        "chiropractie": "125%",
+        "acupuncture": "125%"
+      },
+      "G3": {
+        "osteopathie": "150%",
+        "chiropractie": "150%",
+        "acupuncture": "150%"
+      },
+      "G4": {
+        "osteopathie": "200%",
+        "chiropractie": "200%",
+        "acupuncture": "200%"
+      }
+    }
+  }
+  
