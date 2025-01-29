@@ -12,9 +12,9 @@ class ContactController extends Controller
     {
         $jsonData = $request->json()->all();
         \Log::info('send email :: '.json_encode($jsonData));
-        $fromAddress = 'contact@decennale-express.fr';
+        $fromAddress = 'contact@santeproaudio.fr';
         Mail::to('mohamed.tajmout@gmail.com')->send(new ContactMail($jsonData, $fromAddress));
-        Mail::to('contact@decennale-express.fr')->send(new ContactMail($jsonData, $fromAddress));
+        // Mail::to('contact@santeproaudio.fr')->send(new ContactMail($jsonData, $fromAddress));
 
         return response()->json(['message' => 'Email sent successfully!']);
     }

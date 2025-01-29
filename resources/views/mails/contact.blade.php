@@ -113,10 +113,10 @@
 <body>
     <div class="email-container">
         <div class="email-header">
-            Devis: Décennale Express
+            Devis: Santé Pro
         </div>
         <div class="email-body">
-            <table>
+            {{-- <table>
                 <tr>
                     <th>Profession</th>
                     <td>{{ $details['step1']['profession'] }}</td>
@@ -259,10 +259,10 @@
                     <th>Observations diverses</th>
                     <td>{{ $details['step6']['observations_diverses'] }}</td>
                 </tr>
-            </table>
+            </table> --}}
         </div>
         <div class="footer">
-            © 2025 Décennale Express. All rights reserved.
+            © 2025 SANTÉ PRO. All rights reserved.
         </div>
     </div>
 </body>

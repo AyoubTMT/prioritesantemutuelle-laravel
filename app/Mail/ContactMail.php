@@ -31,7 +31,7 @@ class ContactMail extends Mailable
     {
         return new Envelope(
             from: $this->fromAddress,
-            subject: 'Devis : Décennale Express',
+            subject: 'Devis : Santé Pro',
         );
     }
 
