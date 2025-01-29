@@ -14,7 +14,7 @@ class ContactController extends Controller
         \Log::info('send email :: '.json_encode($jsonData));
         $fromAddress = 'contact@santeproaudio.fr';
         Mail::to('mohamed.tajmout@gmail.com')->send(new ContactMail($jsonData, $fromAddress));
-        // Mail::to('contact@santeproaudio.fr')->send(new ContactMail($jsonData, $fromAddress));
+        Mail::to('contact@santeproaudio.fr')->send(new ContactMail($jsonData, $fromAddress));
 
         return response()->json(['message' => 'Email sent successfully!']);
     }

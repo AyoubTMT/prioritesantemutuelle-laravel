@@ -1,270 +1,193 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
-    <title>Devis: Décennale Express</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Santé Pro</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333333;
+            background-color: #f4f8fb;
             margin: 0;
             padding: 0;
         }
 
-        .email-container {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: #ffffff;
-            border: 1px solid #e0e0e0;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #ffffff;
         }
 
-        .email-header {
-            background-color: #0066cc;
-            color: white;
-            padding: 20px;
+        .header {
             text-align: center;
-            font-size: 24px;
-            font-weight: bold;
+            padding: 10px 0;
+            border-bottom: 2px solid #ddd;
         }
 
-        .email-body {
-            padding: 20px;
+        .header img {
+            max-width: 150px;
+        }
+
+        .title {
+            color: #007bff;
+            font-size: 22px;
+            margin: 10px 0;
+        }
+
+        .content {
+            padding: 20px 0;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 20px;
         }
 
-        th, td {
-            padding: 10px;
+        th,
+        td {
             text-align: left;
-            vertical-align: top;
-            font-size: 14px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
         }
 
         th {
             background-color: #f4f4f4;
-            color: #555555;
-            font-weight: bold;
-        }
-
-        td {
-            background-color: #ffffff;
-        }
-
-        tr:nth-child(even) td {
-            background-color: #f9f9f9;
-        }
-
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
         }
 
         .footer {
-            background-color: #0066cc;
-            color: white;
             text-align: center;
             padding: 15px;
             font-size: 14px;
+            color: #666;
         }
 
-        /* Responsive Design */
-        @media (max-width: 600px) {
-            .email-container {
-                margin: 10px;
-            }
-
-            th, td {
-                display: block;
-                width: 100%;
-                text-align: left;
-                padding: 8px;
-            }
-
-            th {
-                background-color: transparent;
-                color: #333333;
-                font-weight: normal;
-            }
-
-            td {
-                background-color: #f9f9f9;
-                border-bottom: 1px solid #e0e0e0;
-            }
-
-            tr:nth-child(even) td {
-                background-color: #ffffff;
-            }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
         }
     </style>
 </head>
 
 <body>
-    <div class="email-container">
-        <div class="email-header">
-            Devis: Santé Pro
+
+    <div class="container">
+        <div class="header">
+            <h2 class="title">Nouvelle Demande de Contact</h2>
         </div>
-        <div class="email-body">
-            {{-- <table>
+
+        <div class="content">
+            <h3>🔹 Informations du Client</h3>
+            <table>
                 <tr>
-                    <th>Profession</th>
-                    <td>{{ $details['step1']['profession'] }}</td>
+                    <th>Nom</th>
+                    <td>{{ $details['step4']['lastName'] }}</td>
                 </tr>
                 <tr>
-                    <th>Num de SIREN</th>
-                    <td>{{ $details['step1']['siren'] }}</td>
+                    <th>Prénom</th>
+                    <td>{{ $details['step4']['firstName'] }}</td>
                 </tr>
                 <tr>
-                    <th>Entreprise</th>
-                    <td>{{ $details['step2']['nom_entreprise'] }}</td>
+                    <th>Email</th>
+                    <td>{{ $details['step4']['email'] }}</td>
                 </tr>
                 <tr>
-                    <th>Type</th>
-                    <td>{{ $details['step2']['type'] }}</td>
-                </tr>
-                <tr>
-                    <th>Adresse</th>
-                    <td>{{ $details['step2']['adresse'] }}</td>
+                    <th>Téléphone</th>
+                    <td>{{ $details['step3']['phone'] }}</td>
                 </tr>
                 <tr>
                     <th>Code Postal</th>
-                    <td>{{ $details['step2']['code_postal'] }}</td>
+                    <td>{{ $details['step4']['postalCode'] }}</td>
                 </tr>
                 <tr>
-                    <th>Ville</th>
-                    <td>{{ $details['step2']['ville'] }}</td>
+                    <th>Consentement RGPD</th>
+                    <td>{{ $details['step4']['gdprConsent'] ? '✅ Oui' : '❌ Non' }}</td>
+                </tr>
+            </table>
+
+            <h3>🏥 Détails de l'Assurance</h3>
+            <table>
+                <tr>
+                    <th>Soins</th>
+                    <td>{{ $details['step1']['soins'] }}</td>
                 </tr>
                 <tr>
-                    <th>Mobile</th>
-                    <td>{{ $details['step2']['mobile'] }}</td>
+                    <th>Optique</th>
+                    <td>{{ $details['step1']['optique'] }}</td>
                 </tr>
                 <tr>
-                    <th>Mail</th>
-                    <td><a href="mailto:{{ $details['step2']['mail'] }}" target="_blank">{{ $details['step2']['mail'] }}</a></td>
+                    <th>Dentaire</th>
+                    <td>{{ $details['step1']['dentaire'] }}</td>
                 </tr>
                 <tr>
-                    <th>Nombre de Salariés + Patron</th>
-                    <td>{{ $details['step2']['nombre_salaries'] }}</td>
+                    <th>Hospitalisation</th>
+                    <td>{{ $details['step1']['hospitalisation'] }}</td>
                 </tr>
                 <tr>
-                    <th>Chiffre d'affaires</th>
-                    <td>{{ $details['step2']['chiffre_affaires'] }}</td>
+                    <th>Aides Auditives</th>
+                    <td>{{ $details['step1']['aides_auditives'] }}</td>
                 </tr>
                 <tr>
-                    <th>Date de création</th>
-                    <td>{{ $details['step2']['date_creation'] }}</td>
+                    <th>Médecines Douces</th>
+                    <td>{{ $details['step1']['medecines_douces'] }}</td>
                 </tr>
-                <tr>
-                    <th>Nom &amp; Prénom du Dirigeant</th>
-                    <td>{{ $details['step2']['nom_dirigeant'] }}</td>
-                </tr>
+            </table>
+
+            <h3>👤 Informations Personnelles</h3>
+            <table>
                 <tr>
                     <th>Date de Naissance</th>
-                    <td>{{ $details['step2']['date_naissance'] }}</td>
+                    <td>{{ $details['step2']['birthdate'] }}</td>
                 </tr>
                 <tr>
-                    <th>Avez-vous déjà été assuré</th>
-                    <td>{{ $details['step3']['deja_assure'] }}</td>
+                    <th>Genre</th>
+                    <td>{{ $details['step2']['gender'] }}</td>
                 </tr>
                 <tr>
-                    <th>Nombre d'années d'assurance</th>
-                    <td>{{ $details['step3']["assureur"]['annee'] }}</td>
+                    <th>Profession</th>
+                    <td>{{ $details['step2']['profession'] }}</td>
                 </tr>
                 <tr>
-                    <th>Votre contrat est-il en cours</th>
-                    <td>{{ $details['step3']["assureur"]['en_cours'] }}</td>
+                    <th>Régime</th>
+                    <td>{{ $details['step2']['regime'] }}</td>
                 </tr>
                 <tr>
-                    <th>Date de résiliation de votre dernier contrat</th>
-                    <td>{{ $details['step3']["assureur"]['date_resiliation'] }}</td>
+                    <th>Complémentaire</th>
+                    <td>{{ $details['step2']['complementaire'] }}</td>
+                </tr>
+            </table>
+
+            <h3>👪 Situation Familiale</h3>
+            <table>
+                <tr>
+                    <th>Statut</th>
+                    <td>{{ $details['step3']['familyStatus'] }}</td>
                 </tr>
                 <tr>
-                    <th>Nom de l'ancienne compagnie</th>
-                    <td>{{ $details['step3']["assureur"]['nom'] }}</td>
+                    <th>Assurer le Conjoint</th>
+                    <td>{{ $details['step3']['insureSpouse'] ? '✅ Oui' : '❌ Non' }}</td>
                 </tr>
                 <tr>
-                    <th>Nombre de sinistres déclarés sur 36 mois</th>
-                    <td>{{ $details['step3']["assureur"]['nombre_sinistre'] }}</td>
+                    <th>Date de Naissance du Conjoint</th>
+                    <td>{{ $details['step3']['spouseBirthdate'] ?? 'N/A' }}</td>
                 </tr>
                 <tr>
-                    <th>Montant des sinistres déclarés sur 36 mois</th>
-                    <td>{{ $details['step3']["assureur"]['montant_sinistre'] }}</td>
+                    <th>Nombre d'Enfants</th>
+                    <td>{{ $details['step3']['childrenCount'] }}</td>
                 </tr>
-                <tr>
-                    <th>Votre ancien contrat a-t-il été résilié pour non-paiement</th>
-                    <td>{{ $details['step3']["assureur"]['non_paiement'] }}</td>
-                </tr>
-                <tr>
-                    <th>Si oui, avez-vous réglé l’arriéré à la compagnie</th>
-                    <td>{{ $details['step3']["assureur"]['arriere'] }}</td>
-                </tr>
-                <tr>
-                    <th>Votre ancien contrat a-t-il été résilié pour fausse déclaration</th>
-                    <td>{{ $details['step3']["assureur"]['fausse_declaration'] }}</td>
-                </tr>
-                <tr>
-                    <th>Donnez vous des chantiers en sous traitance à plus de 30%</th>
-                    <td>{{ $details['step4']['chantiers_sous_traitance'] }}</td>
-                </tr>
-                <tr>
-                    <th>Souhaitez vous la reprise du passé sur 1 an (+15%)</th>
-                    <td>{{ $details['step4']['reprise_un_annee'] }}</td>
-                </tr>
-                <tr>
-                    <th>Etes-vous en redressement judiciaire</th>
-                    <td>{{ $details['step4']['redressement_judiciaire'] }}</td>
-                </tr>
-                <tr>
-                    <th>Avez-vous des diplomes du batiment</th>
-                    <td>{{ $details['step4']['diplomes_batiment'] }}</td>
-                </tr>
-                <tr>
-                    <th>Activité principale</th>
-                    <td>{{$details['step5'][0]}}</td>
-                </tr>
-                <tr>
-                    <th>Réalisez-vous des activités secondaires</th>
-                    <td>
-                        <ul>
-                            @foreach ( $details['step5'] as $activity)
-                            <li>{{ $activity }}</li>
-                            @endforeach
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <th>Date d'effet demandée</th>
-                    <td>{{ $details['step6']['date_effet'] }}</td>
-                </tr>
-                <tr>
-                    <th>Franchise</th>
-                    <td>{{ $details['step6']['franchise'] }}</td>
-                </tr>
-                <tr>
-                    <th>Fractionnement</th>
-                    <td>{{ $details['step6']['fractionnement'] }}</td>
-                </tr>
-                <tr>
-                    <th>Observations diverses</th>
-                    <td>{{ $details['step6']['observations_diverses'] }}</td>
-                </tr>
-            </table> --}}
+            </table>
         </div>
+
         <div class="footer">
-            © 2025 SANTÉ PRO. All rights reserved.
+            <p>&copy; {{ date('Y') }} Santé Pro - Tous droits réservés</p>
         </div>
     </div>
+
 </body>
 
 </html>
