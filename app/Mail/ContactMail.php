@@ -31,7 +31,7 @@ class ContactMail extends Mailable
     {
         return new Envelope(
             from: $this->fromAddress,
-            subject: 'Devis : Santé Pro',
+            subject: 'Devis : Santé Pro Audio : '.$this->details['step4']['firstName'].' '.$this->details['step4']['lastName'],
         );
     }
 

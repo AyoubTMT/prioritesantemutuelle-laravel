@@ -31,7 +31,7 @@ class ClientMail extends Mailable
     {
         return new Envelope(
             from: $this->fromAddress,
-            subject: 'Confirmation de votre demande - Santé Pro',
+            subject: 'Confirmation de votre demande',
         );
     }
 

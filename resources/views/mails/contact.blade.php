@@ -49,6 +49,7 @@
             text-align: left;
             padding: 10px;
             border-bottom: 1px solid #ddd;
+            width: 50%;
         }
 
         th {
@@ -82,8 +83,12 @@
         </div>
 
         <div class="content">
-            <h3>🔹 Informations du Client</h3>
+            <h3>👤 Informations du Client</h3>
             <table>
+                <tr>
+                    <th>Genre</th>
+                    <td>{{ $details['step2']['gender'] }}</td>
+                </tr>
                 <tr>
                     <th>Nom</th>
                     <td>{{ $details['step4']['lastName'] }}</td>
@@ -93,60 +98,28 @@
                     <td>{{ $details['step4']['firstName'] }}</td>
                 </tr>
                 <tr>
+                    <th>Date de Naissance</th>
+                    <td>{{ $details['step2']['birthdate'] }}</td>
+                </tr>
+                <tr>
                     <th>Email</th>
                     <td>{{ $details['step4']['email'] }}</td>
                 </tr>
                 <tr>
                     <th>Téléphone</th>
-                    <td>{{ $details['step3']['phone'] }}</td>
+                    <td>{{ $details['step4']['telephone'] }}</td>
+                </tr>
+                <tr>
+                    <th>Adresse</th>
+                    <td>{{ $details['step4']['adresse'] }}</td>
                 </tr>
                 <tr>
                     <th>Code Postal</th>
                     <td>{{ $details['step4']['postalCode'] }}</td>
                 </tr>
                 <tr>
-                    <th>Consentement RGPD</th>
-                    <td>{{ $details['step4']['gdprConsent'] ? '✅ Oui' : '❌ Non' }}</td>
-                </tr>
-            </table>
-
-            <h3>🏥 Détails de l'Assurance</h3>
-            <table>
-                <tr>
-                    <th>Soins</th>
-                    <td>{{ $details['step1']['soins'] }}</td>
-                </tr>
-                <tr>
-                    <th>Optique</th>
-                    <td>{{ $details['step1']['optique'] }}</td>
-                </tr>
-                <tr>
-                    <th>Dentaire</th>
-                    <td>{{ $details['step1']['dentaire'] }}</td>
-                </tr>
-                <tr>
-                    <th>Hospitalisation</th>
-                    <td>{{ $details['step1']['hospitalisation'] }}</td>
-                </tr>
-                <tr>
-                    <th>Aides Auditives</th>
-                    <td>{{ $details['step1']['aides_auditives'] }}</td>
-                </tr>
-                <tr>
-                    <th>Médecines Douces</th>
-                    <td>{{ $details['step1']['medecines_douces'] }}</td>
-                </tr>
-            </table>
-
-            <h3>👤 Informations Personnelles</h3>
-            <table>
-                <tr>
-                    <th>Date de Naissance</th>
-                    <td>{{ $details['step2']['birthdate'] }}</td>
-                </tr>
-                <tr>
-                    <th>Genre</th>
-                    <td>{{ $details['step2']['gender'] }}</td>
+                    <th>Ville</th>
+                    <td>{{ $details['step4']['ville'] }}</td>
                 </tr>
                 <tr>
                     <th>Profession</th>
@@ -157,8 +130,12 @@
                     <td>{{ $details['step2']['regime'] }}</td>
                 </tr>
                 <tr>
-                    <th>Complémentaire</th>
+                    <th>Complémentaire santé</th>
                     <td>{{ $details['step2']['complementaire'] }}</td>
+                </tr>
+                <tr>
+                    <th>Consentement RGPD</th>
+                    <td>{{ $details['step4']['gdprConsent'] ? '✅ Oui' : '❌ Non' }}</td>
                 </tr>
             </table>
 
@@ -174,11 +151,57 @@
                 </tr>
                 <tr>
                     <th>Date de Naissance du Conjoint</th>
-                    <td>{{ $details['step3']['spouseBirthdate'] ?? 'N/A' }}</td>
+                    <td>{{ $details['step3']['spouseBirthdate'] ?? '-' }}</td>
                 </tr>
                 <tr>
                     <th>Nombre d'Enfants</th>
                     <td>{{ $details['step3']['childrenCount'] }}</td>
+                </tr>
+                <tr>
+                    <th>Dates de Naissance des Enfants</th>
+                    <td>
+                        @if (!empty($details['step3']['childrenBirthdates']))
+                            <ul>
+                                @foreach ($details['step3']['childrenBirthdates'] as $birthdate)
+                                    <li>{{ $birthdate }}</li>
+                                @endforeach
+                            </ul>
+                        @else
+                            -
+                        @endif
+                    </td>
+                </tr>
+            </table>
+
+            <h3>🏥 Détails de l'Assurance</h3>
+            <table>
+                <tr>
+                    <th>Soins courants</th>
+                    <td>{{ $details['step1']['custom']['soins'] }}</td>
+                </tr>
+                <tr>
+                    <th>Optique</th>
+                    <td>{{ $details['step1']['custom']['optique'] }}</td>
+                </tr>
+                <tr>
+                    <th>Dentaire</th>
+                    <td>{{ $details['step1']['custom']['dentaire'] }}</td>
+                </tr>
+                <tr>
+                    <th>Hospitalisation</th>
+                    <td>{{ $details['step1']['custom']['hospitalisation'] }}</td>
+                </tr>
+                <tr>
+                    <th>Aides Auditives</th>
+                    <td>{{ $details['step1']['custom']['aides_auditives'] }}</td>
+                </tr>
+                <tr>
+                    <th>Médecines Douces</th>
+                    <td>{{ $details['step1']['custom']['medecines_douces'] }}</td>
+                </tr>
+                <tr>
+                    <th>Renfort</th>
+                    <td>{{ $details['step1']['custom']['renfort'] }}</td>
                 </tr>
             </table>
         </div>
