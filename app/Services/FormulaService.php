@@ -130,12 +130,12 @@ class FormulaService
     
         // Fetch details for each level from the JSON data
         $details = [
-            "soins" => $this->formules["soins_courants"][$formulaLevels["soins"]],
+            "soins_courants" => $this->formules["soins_courants"][$formulaLevels["soins"]],
             "hospitalisation" => $this->formules["hospitalisation"][$formulaLevels["hospitalisation"]],
             "optique" => $this->formules["optique"][$formulaLevels["optique"]],
             "aides_auditives" => $this->formules["aides_auditives"][$formulaLevels["aides_auditives"]],
             "dentaire" => $this->formules["dentaire"][$formulaLevels["dentaire"]],
-            "medecines_douces" => $this->formules["prevention_et_medecines_douces"][$formulaLevels["medecines_douces"]]
+            "prevention_et_medecines_douces" => $this->formules["prevention_et_medecines_douces"][$formulaLevels["medecines_douces"]]
         ];
     
         return [

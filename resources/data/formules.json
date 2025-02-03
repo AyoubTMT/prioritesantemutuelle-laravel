@@ -2,145 +2,241 @@
     "hospitalisation": {
       "H1": {
         "description": "Dans un établissement relevant de la loi hospitalière, public ou privé, conventionné ou non conventionné, y compris pour l’hospitalisation « de jour », dite ambulatoire.",
-        "Frais_journaliers_hospitalier": "Frais réels",
+        "Forfait_journalier_hospitalier": "Frais réels",
         "Participation_forfaitaire": "Frais réels",
-        "Honoraires médicaux, chirurgicaux, obstétricaux (médecin n'ayant pas adhéré à un dispositif de pratique tarifaire maitrisée)": "100 %",
-        "Honoraires médicaux, chirurgicaux, obstétricaux (médecin ayant adhéré à un dispositif de pratique tarifaire maitrisée)": "100 %",
+        "Honoraires médicaux, chirurgicaux, obstétricaux (médecin n’ayant pas adhéré à un dispositif de pratique tarifaire maîtrisé)": "100 %",
+        "Honoraires médicaux, chirurgicaux, obstétricaux (médecin ayant adhéré à un dispositif de pratique tarifaire maîtrisé)": "100 %",
         "Frais de séjour, salle d’opération": "100 %",
         "Chambre particulière - sauf affections psychiatriques": "50€/jour",
-        "Frais d’accompagnant (hors restauration)": ""
+        "Frais d’accompagnant (hors restauration)": "25€/nuit"
       },
       "H2": {
         "description": "Dans un établissement relevant de la loi hospitalière, public ou privé, conventionné ou non conventionné, y compris pour l’hospitalisation « de jour », dite ambulatoire.",
-        "Frais_journaliers_hospitalier": "Frais réels",
+        "Forfait_journalier_hospitalier": "Frais réels",
         "Participation_forfaitaire": "Frais réels",
-        "honoraires_adhere": "150 %",
-        "honoraires_non_adhere": "170 %",
-        "frais_sejour": "125 %",
-        "chambre_particuliere": "65€/jour",
-        "frais_accompagnant": "25€/jour"
+        "Honoraires médicaux, chirurgicaux, obstétricaux (médecin n’ayant pas adhéré à un dispositif de pratique tarifaire maîtrisé)": "150 %",
+        "Honoraires médicaux, chirurgicaux, obstétricaux (médecin ayant adhéré à un dispositif de pratique tarifaire maîtrisé)": "170 %",
+        "Frais de séjour, salle d’opération": "125 %",
+        "Chambre particulière - sauf affections psychiatriques": "65€/jour",
+        "Frais d’accompagnant (hors restauration)": "Frais réels"
       },
       "H3": {
         "description": "Dans un établissement relevant de la loi hospitalière, public ou privé, conventionné ou non conventionné, y compris pour l’hospitalisation « de jour », dite ambulatoire.",
-        "Frais_journaliers_hospitalier": "Frais réels",
+        "Forfait_journalier_hospitalier": "Frais réels",
         "Participation_forfaitaire": "Frais réels",
-        "honoraires_adhere": "200 %",
-        "honoraires_non_adhere": "220 %",
-        "frais_sejour": "Frais réels",
-        "chambre_particuliere": "Frais réels",
-        "frais_accompagnant": "Frais réels"
+        "Honoraires médicaux, chirurgicaux, obstétricaux (médecin n’ayant pas adhéré à un dispositif de pratique tarifaire maîtrisé)": "200 %",
+        "Honoraires médicaux, chirurgicaux, obstétricaux (médecin ayant adhéré à un dispositif de pratique tarifaire maîtrisé)": "220 %",
+        "Frais de séjour, salle d’opération": "Frais réels",
+        "Chambre particulière - sauf affections psychiatriques": "Frais réels",
+        "Frais d’accompagnant (hors restauration)": "Frais réels"
       },
       "H4": {
         "description": "Dans un établissement relevant de la loi hospitalière, public ou privé, conventionné ou non conventionné, y compris pour l’hospitalisation « de jour », dite ambulatoire.",
-        "Frais_journaliers_hospitalier": "Frais réels",
+        "Forfait_journalier_hospitalier": "Frais réels",
         "Participation_forfaitaire": "Frais réels",
-        "honoraires_adhere": "200 %",
-        "honoraires_non_adhere": "500 %",
-        "frais_sejour": "Frais réels",
-        "chambre_particuliere": "Frais réels",
-        "frais_accompagnant": "Frais réels"
+        "Honoraires médicaux, chirurgicaux, obstétricaux (médecin n’ayant pas adhéré à un dispositif de pratique tarifaire maîtrisé)": "200 %",
+        "Honoraires médicaux, chirurgicaux, obstétricaux (médecin ayant adhéré à un dispositif de pratique tarifaire maîtrisé)": "500 %",
+        "Frais de séjour, salle d’opération": "Frais réels",
+        "Chambre particulière - sauf affections psychiatriques": "Frais réels",
+        "Frais d’accompagnant (hors restauration)": "Frais réels"
       }
     },
     "soins_courants": {
       "S1": {
-        "paramedicaux": "100%",
-        "consultations": "100%",
-        "analyses": "100%"
+        "Honoraires_paramédicaux": "100%",
+        "Consultations, visites généralistes et spécialistes, actes techniques médicaux, actes de chirurgie en cabinet médical, actes d’imagerie et d’échographie (médecin n’ayant pas adhéré à un dispositif de pratique tarifaire maitrisée)": "100%",
+        "Consultations, visites généralistes et spécialistes, actes techniques médicaux, actes de chirurgie en cabinet médical, actes d’imagerie et d’échographie (médecin ayant adhéré à un dispositif de pratique tarifaire maitrisée)": "100%",
+        "Sages-femmes": "100%",
+        "Analyses et examens de laboratoire": "100%",
+        "Médicaments": "100%",
+        "Ensemble des produits et prestations remboursables prévus à l’article L165.1 du code de la Sécurité sociale (petits et grands appareillages, orthopédie…) hors optique et auditif": "100%",
+        "Frais de transport (hors hospitalisation)": "100%",
+        "Cure thermale (plafond par an et par personne assurée)": "-"
       },
       "S2": {
-        "paramedicaux": "125%",
-        "consultations": "125%",
-        "analyses": "125%"
+        "Honoraires_paramédicaux": "125%",
+        "Consultations, visites généralistes et spécialistes, actes techniques médicaux, actes de chirurgie en cabinet médical, actes d’imagerie et d’échographie (médecin n’ayant pas adhéré à un dispositif de pratique tarifaire maitrisée)": "125%",
+        "Consultations, visites généralistes et spécialistes, actes techniques médicaux, actes de chirurgie en cabinet médical, actes d’imagerie et d’échographie (médecin ayant adhéré à un dispositif de pratique tarifaire maitrisée)": "145%",
+        "Sages-femmes": "125%",
+        "Analyses et examens de laboratoire": "125%",
+        "Médicaments": "Frais réels",
+        "Ensemble des produits et prestations remboursables prévus à l’article L165.1 du code de la Sécurité sociale (petits et grands appareillages, orthopédie…) hors optique et auditif": "125%",
+        "Frais de transport (hors hospitalisation)": "125%",
+        "Cure thermale (plafond par an et par personne assurée)": "250%"
       },
       "S3": {
-        "paramedicaux": "180%",
-        "consultations": "140%",
-        "analyses": "180%"
+        "Honoraires_paramédicaux": "180%",
+        "Consultations, visites généralistes et spécialistes, actes techniques médicaux, actes de chirurgie en cabinet médical, actes d’imagerie et d’échographie (médecin n’ayant pas adhéré à un dispositif de pratique tarifaire maitrisée)": "140%",
+        "Consultations, visites généralistes et spécialistes, actes techniques médicaux, actes de chirurgie en cabinet médical, actes d’imagerie et d’échographie (médecin ayant adhéré à un dispositif de pratique tarifaire maitrisée)": "160%",
+        "Sages-femmes": "180%",
+        "Analyses et examens de laboratoire": "180%",
+        "Médicaments": "Frais réels",
+        "Ensemble des produits et prestations remboursables prévus à l’article L165.1 du code de la Sécurité sociale (petits et grands appareillages, orthopédie…) hors optique et auditif": "195%",
+        "Frais de transport (hors hospitalisation)": "130%",
+        "Cure thermale (plafond par an et par personne assurée)": "650€"
       },
       "S4": {
-        "paramedicaux": "200%",
-        "consultations": "200%",
-        "analyses": "200%"
+        "Honoraires_paramédicaux": "200%",
+        "Consultations, visites généralistes et spécialistes, actes techniques médicaux, actes de chirurgie en cabinet médical, actes d’imagerie et d’échographie (médecin n’ayant pas adhéré à un dispositif de pratique tarifaire maitrisée)": "200%",
+        "Consultations, visites généralistes et spécialistes, actes techniques médicaux, actes de chirurgie en cabinet médical, actes d’imagerie et d’échographie (médecin ayant adhéré à un dispositif de pratique tarifaire maitrisée)": "300%",
+        "Sages-femmes": "200%",
+        "Analyses_et_examens_de_laboratoire": "200%",
+        "Médicaments": "Frais réels",
+        "Ensemble des produits et prestations remboursables prévus à l’article L165.1 du code de la Sécurité sociale (petits et grands appareillages, orthopédie…) hors optique et auditif": "250%",
+        "Frais de transport (hors hospitalisation)": "150%",
+        "Cure thermale (plafond par an et par personne assurée)": "700€"
       }
     },
     "dentaire": {
       "D1": {
-        "soins": "125%",
-        "protheses": "125%",
-        "orthodontie": "125%"
+        "Soins et prothèses 100% Santé": "Frais réels",
+        "Soins": "125 %",
+        "Prothèses": "125 %",
+        "Orthodontie acceptée par la Sécurité sociale": "125 %",
+        "Avantage fidélité sur les prothèses dentaires hors 100% Santé et l'orthodontie acceptée, à partir de la 4ᵉ année d’adhésion au contrat, par an et par personne assurée": "50€",
+        "Prothèse dentaire": "-",
+        "Orthodontie": "-",
+        "Piliers implantaires": "-",
+        "Implant": "400€"
       },
       "D2": {
-        "soins": "150%",
-        "protheses": "150%",
-        "orthodontie": "150%"
+        "Soins et prothèses 100% Santé": "Frais réels",
+        "Soins": "125 %",
+        "Prothèses": "150 %",
+        "Orthodontie acceptée par la Sécurité sociale": "150 %",
+        "Avantage fidélité sur les prothèses dentaires hors 100% Santé et l'orthodontie acceptée, à partir de la 4ᵉ année d’adhésion au contrat, par an et par personne assurée": "50€",
+        "Prothèse dentaire": "-",
+        "Orthodontie": "-",
+        "Piliers implantaires": "100€",
+        "Implant": "400€"
       },
       "D3": {
-        "soins": "300%",
-        "protheses": "300%",
-        "orthodontie": "300%"
+        "Soins et prothèses 100% Santé": "Frais réels",
+        "Soins": "140 %",
+        "Prothèses": "300 %",
+        "Orthodontie acceptée par la Sécurité sociale": "300 %",
+        "Avantage fidélité sur les prothèses dentaires hors 100% Santé et l'orthodontie acceptée, à partir de la 4ᵉ année d’adhésion au contrat, par an et par personne assurée": "100€",
+        "Prothèse dentaire": "150€",
+        "Orthodontie": "250€",
+        "Piliers implantaires": "200€",
+        "Implant": "520€"
       },
       "D4": {
-        "soins": "400%",
-        "protheses": "400%",
-        "orthodontie": "400%"
+        "Soins et prothèses 100% Santé": "Frais réels",
+        "Soins": "200 %",
+        "Prothèses": "400 %",
+        "Orthodontie acceptée par la Sécurité sociale": "300 %",
+        "Avantage fidélité sur les prothèses dentaires hors 100% Santé et l'orthodontie acceptée, à partir de la 4ᵉ année d’adhésion au contrat, par an et par personne assurée": "150€",
+        "Prothèse dentaire": "200€",
+        "Orthodontie": "-",
+        "Piliers implantaires": "300€",
+        "Implant": "700€"
       }
     },
     "optique": {
       "O1": {
-        "equipements_classe_A": "Frais réels",
-        "monture_2_verres_simples": "100 €"
+        "description": "Dans un établissement relevant de la loi hospitalière, public ou privé, conventionné ou non conventionné, y compris pour l’hospitalisation « de jour », dite ambulatoire.",
+        "Monture + 2 verres simples": "100€",
+        "Monture + 1 verre simple + 1 verre complexe": "150€",
+        "Monture + 2 verres complexes": "200€",
+        "Monture + 1 verre simple + 1 verre très complexe": "150€",
+        "Monture + 1 verre complexe + 1 verre très complexe": "200€",
+        "Monture + 2 verres très complexes": "200€",
+        "Lentilles y compris lentilles non prises en charge par la Sécurité sociale (remboursement maximum par assuré et par année d’assurance)": "100€",
+        "Plafond global verres, monture et lentilles (par assuré et par année d’assurance)": "300€",
+        "Prestation d’adaptation": "100 %",
+        "Chirurgie réfractive (par œil, par assuré et par année d’assurance)": "-"
       },
       "O2": {
-        "equipements_classe_A": "Frais réels",
-        "monture_2_verres_simples": "200 €"
+        "description": "Dans un établissement relevant de la loi hospitalière, public ou privé, conventionné ou non conventionné, y compris pour l’hospitalisation « de jour », dite ambulatoire.",
+        "Monture + 2 verres simples": "200€",
+        "Monture + 1 verre simple + 1 verre complexe": "250€",
+        "Monture + 2 verres complexes": "300€",
+        "Monture + 1 verre simple + 1 verre très complexe": "250€",
+        "Monture + 1 verre complexe + 1 verre très complexe": "300€",
+        "Monture + 2 verres très complexes": "300€",
+        "Lentilles y compris lentilles non prises en charge par la Sécurité sociale (remboursement maximum par assuré et par année d’assurance)": "100€",
+        "Plafond global verres, monture et lentilles (par assuré et par année d’assurance)": "300€",
+        "Prestation d’adaptation": "100 %",
+        "Chirurgie réfractive (par œil, par assuré et par année d’assurance)": "-"
       },
       "O3": {
-        "equipements_classe_A": "Frais réels",
-        "monture_2_verres_simples": "300 €"
+        "description": "Dans un établissement relevant de la loi hospitalière, public ou privé, conventionné ou non conventionné, y compris pour l’hospitalisation « de jour », dite ambulatoire.",
+        "Monture + 2 verres simples": "300€",
+        "Monture + 1 verre simple + 1 verre complexe": "350€",
+        "Monture + 2 verres complexes": "400€",
+        "Monture + 1 verre simple + 1 verre très complexe": "350€",
+        "Monture + 1 verre complexe + 1 verre très complexe": "470€",
+        "Monture + 2 verres très complexes": "470€",
+        "Lentilles y compris lentilles non prises en charge par la Sécurité sociale (remboursement maximum par assuré et par année d’assurance)": "400€",
+        "Plafond global verres, monture et lentilles (par assuré et par année d’assurance)": "650€",
+        "Prestation d’adaptation": "100 %",
+        "Chirurgie réfractive (par œil, par assuré et par année d’assurance)": "400€"
       },
       "O4": {
-        "equipements_classe_A": "Frais réels",
-        "monture_2_verres_simples": "420 €"
+        "description": "Dans un établissement relevant de la loi hospitalière, public ou privé, conventionné ou non conventionné, y compris pour l’hospitalisation « de jour », dite ambulatoire.",
+        "Monture + 2 verres simples": "420€",
+        "Monture + 1 verre simple + 1 verre complexe": "520€",
+        "Monture + 2 verres complexes": "570€",
+        "Monture + 1 verre simple + 1 verre très complexe": "520€",
+        "Monture + 1 verre complexe + 1 verre très complexe": "610€",
+        "Monture + 2 verres très complexes": "750€",
+        "Lentilles y compris lentilles non prises en charge par la Sécurité sociale (remboursement maximum par assuré et par année d’assurance)": "500€",
+        "Plafond global verres, monture et lentilles (par assuré et par année d’assurance)": "800€",
+        "Prestation d’adaptation": "100 %",
+        "Chirurgie réfractive (par œil, par assuré et par année d’assurance)": "500€"
       }
     },
     "aides_auditives": {
       "A1": {
-        "equipements_classe_I": "Frais réels",
-        "equipements_classe_II": "100%"
+        "description": "Remboursement maximum dans la limite d’un équipement par oreille par période de 4 ans.",
+        "Equipements 100% Santé (Classe I)": "Frais réels",
+        "Equipements de classe II": "100 %",
+        "Avantage fidélité sur les équipements de classe II à partir de la 4ᵉ année d’adhésion au contrat, par an et par personne assurée": "50€"
       },
       "A2": {
-        "equipements_classe_I": "Frais réels",
-        "equipements_classe_II": "200%"
+        "description": "Remboursement maximum dans la limite d’un équipement par oreille par période de 4 ans.",
+        "Equipements 100% Santé (Classe I)": "Frais réels",
+        "Equipements de classe II": "200 %",
+        "Avantage fidélité sur les équipements de classe II à partir de la 4ᵉ année d’adhésion au contrat, par an et par personne assurée": "50€"
       },
       "A3": {
-        "equipements_classe_I": "Frais réels",
-        "equipements_classe_II": "300%"
+        "description": "Remboursement maximum dans la limite d’un équipement par oreille par période de 4 ans.",
+        "Equipements 100% Santé (Classe I)": "Frais réels",
+        "Equipements de classe II": "300 %",
+        "Avantage fidélité sur les équipements de classe II à partir de la 4ᵉ année d’adhésion au contrat, par an et par personne assurée": "100€"
       },
       "A4": {
-        "equipements_classe_I": "Frais réels",
-        "equipements_classe_II": "500%"
+        "description": "Remboursement maximum dans la limite d’un équipement par oreille par période de 4 ans.",
+        "Equipements 100% Santé (Classe I)": "Frais réels",
+        "Equipements de classe II": "500 %",
+        "Avantage fidélité sur les équipements de classe II à partir de la 4ᵉ année d’adhésion au contrat, par an et par personne assurée": "150€"
       }
     },
     "prevention_et_medecines_douces": {
       "G1": {
-        "osteopathie": "100%",
-        "chiropractie": "100%",
-        "acupuncture": "100%"
+        "Médecines douces (ostéopathes, étiopathes, chiropracteurs, acupuncteurs, diététiciens, psychologues)": "-",
+        "Objets connectés pour ma santé (tensiomètre, oxymètre de pouls, bracelet d’activité)": "50€",
+        "Vaccins_prescrits_non_remboursés_par_la_Sécurité_sociale": "Frais réels",
+        "Médicament et dispositif prescrits non remboursés par la Sécurité sociale": "50€"
       },
       "G2": {
-        "osteopathie": "125%",
-        "chiropractie": "125%",
-        "acupuncture": "125%"
+        "Médecines douces (ostéopathes, étiopathes, chiropracteurs, acupuncteurs, diététiciens, psychologues)": "-",
+        "Objets connectés pour ma santé (tensiomètre, oxymètre de pouls, bracelet d’activité)": "50€",
+        "Vaccins_prescrits_non_remboursés_par_la_Sécurité_sociale": "Frais réels",
+        "Médicament et dispositif prescrits non remboursés par la Sécurité sociale": "50€"
       },
       "G3": {
-        "osteopathie": "150%",
-        "chiropractie": "150%",
-        "acupuncture": "150%"
+        "Médecines douces (ostéopathes, étiopathes, chiropracteurs, acupuncteurs, diététiciens, psychologues)": "100€",
+        "Objets connectés pour ma santé (tensiomètre, oxymètre de pouls, bracelet d’activité)": "50€",
+        "Vaccins_prescrits_non_remboursés_par_la_Sécurité_sociale": "Frais réels",
+        "Médicament et dispositif prescrits non remboursés par la Sécurité sociale": "100€"
       },
       "G4": {
-        "osteopathie": "200%",
-        "chiropractie": "200%",
-        "acupuncture": "200%"
+        "Médecines douces (ostéopathes, étiopathes, chiropracteurs, acupuncteurs, diététiciens, psychologues)": "200€",
+        "Objets connectés pour ma santé (tensiomètre, oxymètre de pouls, bracelet d’activité)": "100€",
+        "Vaccins_prescrits_non_remboursés_par_la_Sécurité_sociale": "Frais réels",
+        "Médicament et dispositif prescrits non remboursés par la Sécurité sociale": "150€"
       }
     }
   }
