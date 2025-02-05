@@ -201,7 +201,7 @@
                 </tr>
                 <tr>
                     <th>Renfort</th>
-                    <td>{{ $details['step1']['renfort'] .'  -  '.$details['step1']['custom']['renfort'] }}</td>
+                    <td>{{ $details['step1']['custom']['renfort'] }}</td>
                 </tr>
             </table>
         </div>

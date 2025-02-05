@@ -137,7 +137,7 @@
 
   <div class="container">
     <div class="header">
-      <h1>Santé Pro Audio</h1>
+      <h1>Santé Pro</h1>
       <p>Votre partenaire en assurance santé</p>
     </div>
 
