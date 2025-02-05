@@ -177,31 +177,31 @@
             <table>
                 <tr>
                     <th>Soins courants</th>
-                    <td>{{ $details['step1']['custom']['soins'] }}</td>
+                    <td>{{ $details['step1']['soins'] .'  -  '.$details['step1']['custom']['soins'] }}</td>
                 </tr>
                 <tr>
                     <th>Optique</th>
-                    <td>{{ $details['step1']['custom']['optique'] }}</td>
+                    <td>{{ $details['step1']['optique'] .'  -  '.$details['step1']['custom']['optique'] }}</td>
                 </tr>
                 <tr>
                     <th>Dentaire</th>
-                    <td>{{ $details['step1']['custom']['dentaire'] }}</td>
+                    <td>{{ $details['step1']['dentaire'] .'  -  '.$details['step1']['custom']['dentaire'] }}</td>
                 </tr>
                 <tr>
                     <th>Hospitalisation</th>
-                    <td>{{ $details['step1']['custom']['hospitalisation'] }}</td>
+                    <td>{{ $details['step1']['hospitalisation'] .'  -  '.$details['step1']['custom']['hospitalisation'] }}</td>
                 </tr>
                 <tr>
                     <th>Aides Auditives</th>
-                    <td>{{ $details['step1']['custom']['aides_auditives'] }}</td>
+                    <td>{{ $details['step1']['aides_auditives'] .'  -  '.$details['step1']['custom']['aides_auditives'] }}</td>
                 </tr>
                 <tr>
                     <th>Médecines Douces</th>
-                    <td>{{ $details['step1']['custom']['medecines_douces'] }}</td>
+                    <td>{{ $details['step1']['medecines_douces'] .'  -  '.$details['step1']['custom']['medecines_douces'] }}</td>
                 </tr>
                 <tr>
                     <th>Renfort</th>
-                    <td>{{ $details['step1']['custom']['renfort'] }}</td>
+                    <td>{{ $details['step1']['renfort'] .'  -  '.$details['step1']['custom']['renfort'] }}</td>
                 </tr>
             </table>
         </div>
