@@ -49,6 +49,7 @@ class ContactController extends Controller
     
         // Send email
         Mail::to('mohamed.tajmout@gmail.com')->send(new HomeMail($request->all()));
+        Mail::to('contact@santeproaudio.fr')->send(new HomeMail($request->all()));
 
         return response()->json(['message' => 'Message envoyé avec succès!'], 200);
     }
